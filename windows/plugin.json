@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "npower-validacao-win",
+  "version": "0.0.1",
+  "description": "Teste de subpasta do repositório (pathInRepo). Sem código de produto."
+}
