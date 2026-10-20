@@ -5,6 +5,8 @@ description: Use when the user starts using the npower-validacao power (includin
 
 # npower-validacao: validation kit
 
+> **Kit version 0.1.1.** This line only exists in 0.1.1: if you can read it, Kiro applied the update of the SKILL text.
+
 This power only exists to test how Kiro runs a Power. It has no product behavior.
 
 ## First use ("Try power")
