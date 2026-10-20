@@ -1,0 +1,17 @@
+#!/bin/sh
+# Launcher: runs the hello binary built for this machine.
+set -eu
+dir=$(cd "$(dirname "$0")" && pwd)
+case "$(uname -s)" in
+Darwin) os=darwin ;;
+Linux) os=linux ;;
+*) echo "hello: unsupported operating system $(uname -s)" >&2; exit 1 ;;
+esac
+case "$(uname -m)" in
+arm64 | aarch64) arch=arm64 ;;
+x86_64 | amd64) arch=amd64 ;;
+*) echo "hello: unsupported architecture $(uname -m)" >&2; exit 1 ;;
+esac
+binary="$dir/hello-$os-$arch"
+[ -x "$binary" ] || { echo "hello: no build for $os/$arch" >&2; exit 1; }
+exec "$binary" "$@"

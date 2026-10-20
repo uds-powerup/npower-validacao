@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "npower-validacao",
+  "version": "0.1.0",
+  "description": "Power de validação: kit mínimo para testar como o Kiro instala e executa um Power. Não contém código de produto.",
+  "author": {
+    "name": "UDS Tecnologia"
+  },
+  "keywords": [
+    "validacao",
+    "teste"
+  ]
+}

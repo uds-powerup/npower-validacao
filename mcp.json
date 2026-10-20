@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "hello": {
+      "type": "stdio",
+      "command": "./bin/hello",
+      "args": [],
+      "env": {
+        "HELLO_PROBE": "data=${PLUGIN_DATA}|root=${PLUGIN_ROOT}"
+      }
+    }
+  }
+}
